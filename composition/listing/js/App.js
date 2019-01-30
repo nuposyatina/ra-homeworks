@@ -1,16 +1,21 @@
 'use strict';
 
+const ColorSelection = (type) => {
+  switch(type) {
+    case 'unisex':
+      return "black";
+    case 'male':
+      return "blue";
+    case 'female':
+      return "orange";
+  }
+}
+
 const App = ({items}) => (
   <main>
     {items.map(item => {
-      switch(item.type) {
-        case 'unisex':
-          return <Item color="black" item={item} />;
-        case 'male':
-          return <Item color="blue" item={item} />;
-        case 'female':
-          return <Item color="orange" item={item} />;
-      }
+      const color = ColorSelection(item.type);
+      return <Item color={color} item={item}/>
     })}
   </main>
 );
