@@ -6,7 +6,8 @@ const Menu = () => {
       <NavLink 
         className="menu__item" 
         activeClassName="menu__item-active" 
-        to="/" exact
+        to="/" 
+        exact
       >
         Главная
       </NavLink>
