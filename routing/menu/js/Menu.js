@@ -2,7 +2,7 @@
 
 const Menu = () => {
 	return (
-		<nav className="menu">
+    <nav className="menu">
       <NavLink 
         className="menu__item" 
         activeClassName="menu__item-active" 
@@ -31,6 +31,6 @@ const Menu = () => {
       >
         Forza Karting
       </NavLink>
-		</nav>
-	)
+    </nav>
+  )
 }
