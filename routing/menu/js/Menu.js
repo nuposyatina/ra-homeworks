@@ -1,7 +1,7 @@
 'use strict';
 
 const Menu = () => {
-	return (
+  return (
     <nav className="menu">
       <NavLink 
         className="menu__item" 
@@ -24,7 +24,7 @@ const Menu = () => {
       >
         Time Attack
       </NavLink>
-			<NavLink
+      <NavLink
         className="menu__item" 
         activeClassName="menu__item-active" 
         to="/forza"
