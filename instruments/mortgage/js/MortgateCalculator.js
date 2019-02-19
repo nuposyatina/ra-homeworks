@@ -1,9 +1,11 @@
+const Form = window.antd.Form;
+
 const MortgateCalculator = () => (
   <div>
-    <form action="">
+    <Form layout="vertical">
       <Autocomplete/>
       <Inputs/>
       <Button/>
-    </form>
+    </Form>
   </div>
 );
